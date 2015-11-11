@@ -1,0 +1,35 @@
+.drug-court-edition {
+	background-color: #283c46;
+}
+
+.owl-carousel {
+	width: 55%;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.owl-carousel img {
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.owl-captions {
+	float: right;
+	width: 40%;
+	height: 500px;
+}
+
+.owl-buttons {
+	float: right;
+}
+
+.owl-prev, .owl-next {
+	float: left;
+	margin-left: 10px;
+}
+
+.caption-title {
+	float: left;
+}
+
