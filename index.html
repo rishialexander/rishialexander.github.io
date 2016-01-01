@@ -1,9 +1,23 @@
-rishi agarwal, designer. rishialexander@gmail.com
-<!-- <br><br>
+---
+layout: default
+---
 
-<strong>Data Viz Project</strong>
-<br><br>
+<div class="home">
 
-<strong>Entry 1</strong> posted 11/6/15 23:15
-<br>
-I've started a short project to learn some web scraping and get my hands dirty with D3. I'm going to scrape the UW Course Evals website to gather all of the relevant data and push it through D3 to make some fun insights. The UW Course Evals is a website that shows how each UW instructor was rated by students at the end of every quarter. It's a useful site but the information is not easily readable at all. There is some added complexity because you need to login to see the pages (how do I do that?), and I need to hit about 15,000 pages (I need to rate limit for sure). I think I will use Python and Beautiful Soup to scrape the site. Since I only need to scrape once, I figure I only need a CSV file to hold the data. Then I will pipe the data from the text file into D3 and do some visualization magic. I don't know what kind of data visualizations I will do, but I suspect I'll come up with some interesting ideas once I play around with it. At the very least, my goal is to make something useful so that I (and others, maybe) can quickly find relevant information about majors, courses, and instructors. The first step is to figure out how to get Beautiful Soup running. I think I will test it out on the Hacker News front page first, since it has a simple and predictable layout. -->
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
