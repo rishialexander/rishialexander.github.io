@@ -1,0 +1,118 @@
+@font-face {
+	font-family: ProximaNovaRegular;
+	src: url('fonts/ProximaNovaRegular.otf');
+}
+
+@font-face {
+	font-family: ProximaNovaSemibold;
+	src: url('fonts/ProximaNovaSemibold.otf');
+}
+
+/*
+@font-face {
+	font-family: GPPM;
+	src: url('fonts/GaramondPremrProMed.otf');
+}
+*/
+
+
+* {
+	margin: 0;
+}
+
+body {
+	background-color: #283C46;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	float: left;
+}
+
+#header {
+	position: fixed;
+	top: 200;
+	left: 0;
+}
+
+header {
+	background-color: #263238;
+	color: white;
+	height: 48px;
+	position: fixed;
+	width: 100%;
+	overflow: hidden;
+}
+
+.logo {
+	float: left;
+	padding-top: 11px;
+	margin-left: 12.5%;
+	font-family: "ProximaNovaSemibold", serif;
+	font-weight: 600;
+	font-size: 23px;
+	letter-spacing: -1px;
+}
+
+.nav {
+	float: right; 
+	margin-right: 11.25%;
+	font-family: "ProximaNovaRegular", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+header li {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 16px;
+	height: 40px;
+}
+
+.current {
+	background-color: #3997C9;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-family: 'ProximaNovaSemibold', sans-serif;
+}
+
+header a, header a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.title {
+	height: 100vh;
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+	height: 100px;
+}
+
+#sources {
+	clear: both;
+	background-color: #263137;
+	text-align: center;
+	padding-bottom: 250px;
+	color: #9BAFB9;
+	font-size: 18px;
+	font-family: 'ProximaNovaRegular', sans-serif;
+}
+
+#sources p {
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 18px;
+	
+}
+
+#sources a, #sources a:visited {
+	color: #9BAFB9;
+}
+
+
+
