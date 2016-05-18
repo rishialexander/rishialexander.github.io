@@ -16,5 +16,15 @@ video {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    background: url(teaser.png) no-repeat;
     background-size: cover; 
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(teaser.png) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
 }
