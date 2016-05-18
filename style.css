@@ -24,7 +24,7 @@ video {
     html {
          background: url(teaser.png) #000 no-repeat center center fixed;
     }
-    #bgvid {
+    video {
         display: none;
     }
 }
