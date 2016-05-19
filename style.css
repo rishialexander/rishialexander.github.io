@@ -1,9 +1,10 @@
 body {
 	margin: 0;
+    background: #000;
 
 }
 
-video#vid { 
+/*video#vid { 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -18,4 +19,11 @@ video#vid {
     transform: translateX(-50%) translateY(-50%);
     background: url(teaser.png) no-repeat;
     background-size: cover; 
+}
+*/
+
+#video {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20vh;
 }
