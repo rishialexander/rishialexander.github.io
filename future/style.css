@@ -1,3 +1,51 @@
-* { 
-	background: red;
-}
+/*@font-face { font-family: "Apercu"; font-weight: 400; src: url('assets/Apercu/Apercu-Regular.otf'); }
+
+@font-face { font-family: "Apercu"; font-weight: 300; src: url('assets/Apercu/Apercu-Light.otf'); }
+
+@font-face { font-family: "Apercu"; font-weight: 500; src: url('assets/Apercu/Apercu-Medium.otf'); }
+
+@font-face { font-family: "Apercu"; font-weight: 600; src: url('assets/Apercu/Apercu-Bold.otf'); }*/
+
+@font-face { font-family: "Walsheim"; font-weight: 400; src: url('assets/Walsheim/GT-Walsheim-Pro-Regular.woff'); }
+
+/*@font-face { font-family: "Walsheim"; font-weight: 300; src: url('assets/Walsheim/GT-Walsheim-Pro-Light.woff'); }*/
+
+@font-face { font-family: "Walsheim"; font-weight: 500; src: url('assets/Walsheim/GT-Walsheim-Pro-Medium.woff'); }
+
+@font-face { font-family: "Walsheim"; font-weight: 600; src: url('assets/Walsheim/GT-Walsheim-Pro-Bold.woff'); }
+
+@font-face { font-family: "Walsheim"; font-weight: 600; font-style: italic; src: url('assets/Walsheim/GT-Walsheim-Pro-Bold-Oblique.woff'); }
+
+body, html { margin: 0; padding: 0; background: #f6f6f6;}
+* { font-family: "Walsheim", "Helvetica"; font-weight: 400;}
+
+#main { max-width: 1200px; margin: 0 auto; padding: 10px; }
+
+#header { display: flex; flex-direction: row; align-items: center; justify-content: space-between; max-width: 600px; margin: 20px auto 40px; }
+#header div { float: left; }
+#header #logo { width: 120px; height: 120px; background: url('assets/logo.png'); background-size: cover; }
+#header .menu-item { color: #FF4251; font-size: 20px; position: relative; margin-top: 4px; }
+#header .menu-item a { text-decoration: none; color: #FF4251; font-weight: 500; padding: 20px; }
+#header .menu-item:hover::after { content: "\00B7"; font-size: 30px; position: absolute; left: calc(50% - 4px); top: 15px; }
+#header .menu-selected { position: relative; }
+#header .menu-selected::after { content: "\00B7"; font-size: 30px; position: absolute; left: calc(50% - 4px); top: 15px; }
+
+
+.section { height: 720px; margin: 0 0 100px;}
+.section .wordmark { display: inline-block; width: 110px; height: 40px; background: url('assets/wordmark.png'); background-size: cover; position: relative; top: 2px; margin-right: 3px; }
+.section .wordmark-text { font-style: italic; }
+
+.section .section-inner { height: 100%; overflow: hidden; position: relative; background: white; }
+
+.section .section-text { width: 480px; position: absolute; left: 60px; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+.section .text-container {  }
+.section .section-text h1 { color: #FF4251; font-weight: 600; font-size: 36px; line-height: 44px; margin: 0 0 16px; letter-spacing: -0.1px;}
+.section .section-text p { color: #333; font-size: 18px; line-height: 26px; margin: 0 0 10px; }
+
+.section .section-media { position: absolute; right: 0; background: #FF4251; height: 100%; width: 540px;}
+.section .video-container { width: 317px; height: 637px; position: relative; left: 116px; top: 44px; background: url('assets/phone2.png'); background-size: cover; }
+.section .section-media video { position: absolute; left: 17px; top: 72px; }
+
+
+
+
