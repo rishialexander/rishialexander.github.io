@@ -16,7 +16,7 @@
 
 @font-face { font-family: "Walsheim"; font-weight: 600; font-style: italic; src: url('assets/Walsheim/GT-Walsheim-Pro-Bold-Oblique.woff'); }
 
-body, html { margin: 0; padding: 0; background: #f6f6f6;}
+body, html { margin: 0; padding: 0; /*background: #f6f6f6;*/ }
 * { font-family: "Walsheim", "Helvetica"; font-weight: 400;}
 
 #main { max-width: 1200px; margin: 0 auto; padding: 10px; }
@@ -24,7 +24,7 @@ body, html { margin: 0; padding: 0; background: #f6f6f6;}
 #header { display: flex; flex-direction: row; align-items: center; justify-content: space-between; max-width: 600px; margin: 20px auto 40px; }
 #header div { float: left; }
 #header #logo { width: 120px; height: 120px; background: url('assets/logo.png'); background-size: cover; }
-#header .menu-item { color: #FF4251; font-size: 20px; position: relative; margin-top: 4px; }
+#header .menu-item { color: #FF4251; font-size: 22px; position: relative; margin-top: 4px; }
 #header .menu-item a { text-decoration: none; color: #FF4251; font-weight: 500; padding: 20px; }
 #header .menu-item:hover::after { content: "\00B7"; font-size: 30px; position: absolute; left: calc(50% - 4px); top: 15px; }
 #header .menu-selected { position: relative; }
@@ -37,12 +37,13 @@ body, html { margin: 0; padding: 0; background: #f6f6f6;}
 
 .section .section-inner { height: 100%; overflow: hidden; position: relative; background: white; }
 
-.section .section-text { width: 480px; position: absolute; left: 60px; height: 100%; display: flex; flex-direction: column; justify-content: center; }
-.section .text-container {  }
+.section .section-text { width: 55%; height: 100%; display: flex; flex-direction: column; justify-content: center; position: absolute;}
+.section .text-container { padding: 0 20px; }
 .section .section-text h1 { color: #FF4251; font-weight: 600; font-size: 36px; line-height: 44px; margin: 0 0 16px; letter-spacing: -0.1px;}
+.section .section-text h1.main { font-size: 56px; letter-spacing: -0.5px; line-height: 68px; }
 .section .section-text p { color: #333; font-size: 18px; line-height: 26px; margin: 0 0 10px; }
 
-.section .section-media { position: absolute; right: 0; background: #FF4251; height: 100%; width: 540px;}
+.section .section-media { position: absolute; right: 0; background: #FF4251; height: 100%; width: 45%; }
 .section .video-container { width: 317px; height: 637px; position: relative; left: 116px; top: 44px; background: url('assets/phone2.png'); background-size: cover; }
 .section .section-media video { position: absolute; left: 17px; top: 72px; }
 
