@@ -3,67 +3,54 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/visible.js"></script>
+	<script src="js/home-script.js"></script>
 </head>
 <body>
 	<div id='main'>
-		<div id='header'>
-			<div class='menu-item menu-selected'><a href='/future'>the app</a></div>
-			<a href='/future'><div id='logo'></div></a>
-			<div class='menu-item'><a href='/future'>inspiration</a></div>
+		<div id='menu'>
+			<a href='index.html'><div id='menu-logo'></div></a>
+			<a href='index.html'><div class='menu-item menu-item-selected' id='the-app'>the app</div></a>
+			<a href='inspiration.html'><div class='menu-item' id='inspiration'>inspiration</div></a>
 		</div>
-		<div class='section'>
-			<div class='section-inner'>
-				<div class='section-text'>
-					<div class='text-container'>
-						<h1 class='main'><!-- <span class='wordmark'></span> --> Hound finds the best marijuana for you.</h1>
-					</div>
+
+		<div id='gradient'></div>
+
+		<div id='app-left'>
+			<div class='app-section'>
+				<div class='app-text' id='text-1'>
+					<h1>A fun, simple way to learn about how marijuana fits into your lifestyle.</h1>
+					<p>Hound puts a budtender in your pocket and keeps you connected with your favorite stores and growers so that you always find great products.</p>
 				</div>
-				<div class='section-media'>
-					<div class='video-container'>
-						<video autoplay loop src='assets/test.mp4' height='500'></video>
-					</div>
+			</div>
+			<div class='app-section'>
+				<div class='app-text' id='text-2'>
+					<h1>Explore everything that marijuana has to offer.</h1>
+					<p>Now that marijuana is more accessible than ever, you have thousands of choices whenever you want to try something new. The Budtender can help you find the right one for you, whatever you’re feeling.</p>
+				</div>
+			</div>
+			<div class='app-section'>
+				<div class='app-text' id='text-3'>
+					<h1>Figure out what works for you, and what doesn't.</h1>
+					<p>Log all the products that you use, keep track of your favorites and share feedback directly with the growers. Hound uses your feedback to give you better recommendations in the future.</p>
+				</div>
+			</div>
+			<div class='app-section'>
+				<div class='app-text' id='text-4'>
+					<h1>Connect directly with growers for the first time.</h1>
+					<p>Go beyond the packaging and learn about the growers who put their passion into growing. Discover their philosophies, see photos of their growing methods and give them direct feedback to make their next batch perfect.</p>
+				</div>
+			</div>
+			<div class='app-section'>
+				<div class='app-text' id='text-5'>
+					<h1>Become a tastemaker and get exclusive access to the latest products.</h1>
+					<p>If you’re a frequent flyer, your local retailer can reach out to you and give you exclusive access to the latest products. Let them know what you think—if you like it, you might see it in stock soon.</p>
 				</div>
 			</div>
 		</div>
-		<div class='section'>
-			<div class='section-inner'>
-				<div class='section-text'>
-					<div class='text-container'>
-						<h1>(A home page catered to you.)</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at convallis ex. Sed lectus mi, mollis sed felis eget, aliquam pellentesque quam. Sed massa ex, tincidunt molestie purus eget, pulvinar ultricies nunc.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class='section'>
-			<div class='section-inner'>
-				<div class='section-text'>
-					<div class='text-container'>
-						<h1>Remember what works for you, and what doesn't.</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at convallis ex. Sed lectus mi, mollis sed felis eget, aliquam pellentesque quam. Sed massa ex, tincidunt molestie purus eget, pulvinar ultricies nunc.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class='section'>
-			<div class='section-inner'>
-				<div class='section-text'>
-					<div class='text-container'>
-						<h1>Discover the story behind the marijuana and connect with the growers.</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at convallis ex. Sed lectus mi, mollis sed felis eget, aliquam pellentesque quam. Sed massa ex, tincidunt molestie purus eget, pulvinar ultricies nunc.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class='section'>
-			<div class='section-inner'>
-				<div class='section-text'>
-					<div class='text-container'>
-						<h1>Become a tastemaker.</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at convallis ex. Sed lectus mi, mollis sed felis eget, aliquam pellentesque quam. Sed massa ex, tincidunt molestie purus eget, pulvinar ultricies nunc.</p>
-					</div>
-				</div>
-			</div>
+		<div id='app-right'>
+			<div id='phone'><div id='phone-inset'><video autoplay loop src='assets/videos/hero.mp4' width='280px'></video></div></div>
 		</div>
 	</div>
 </body>
