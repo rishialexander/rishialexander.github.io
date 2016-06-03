@@ -187,7 +187,7 @@ body, html {
 }
 
 .inspiration-page {
-	min-height: 5000px;
+	min-height: 8000px;
 	box-sizing: border-box;
 }
 
@@ -206,7 +206,7 @@ body, html {
 	height: 520px;
 
 	width: 100vw;
-	height: 5000px;
+	height: 8000px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -222,15 +222,29 @@ body, html {
 	border-radius: 3px;
 }
 
-.inspo-section-img {
+.inspo-section-media {
 	width: 500px;
 	top: 0;
 	border-radius: 3px;
 	overflow: hidden;
+	color: #fff;
 }
 
-.inspo-section-img img {
+.media-container {
+	position: relative;
+}
+
+.media-container .inspo-text {
+	position: relative;
+	z-index: 999;
+	padding: 55px 70px;
+}
+
+.inspo-section-media img, .inspo-section-media video {
 	max-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .inspo-text h1 {
@@ -246,9 +260,12 @@ body, html {
 	margin: 0;
 }
 
+.inspo-text a, .inspo-text a:visited {
+	color: #071548;
+}
+
 #card-1 {
 	background: #FF4251;
-	z-index: 10;
 	margin-left: calc((100vw - 952px)/2 + 0px);
 	margin-top: calc(60px + 10vh + 0px);
 	position: relative;
@@ -256,7 +273,6 @@ body, html {
 
 #card-2 {
 	background: #D0D0D0;
-	z-index: 8;
 	margin-left: calc((100vw - 952px)/2 + 282px);
 	margin-top: calc(60px + 10vh + 184px);
 	position: fixed;
@@ -264,7 +280,6 @@ body, html {
 
 #card-3 {
 	background: #071548;
-	z-index: 7;
 	margin-left: calc((100vw - 952px)/2 + 74px);
 	margin-top: calc(60px + 10vh + 134px);
 	position: fixed;
@@ -272,7 +287,6 @@ body, html {
 
 #card-4 {
 	background: #9F52E2;
-	z-index: 6;
 	margin-left: calc((100vw - 952px)/2 + 452px);
 	margin-top: calc(60px + 10vh + 46px);
 	position: fixed;
@@ -280,17 +294,37 @@ body, html {
 
 #card-5 {
 	background: #4295FF;
-	z-index: 5;
 	margin-left: calc((100vw - 952px)/2 + 388px);
 	margin-top: calc(60px + 10vh + 170px);
 	position: fixed;
 }
 
 #card-6 {
-	z-index: 9;
-	margin-left: calc((100vw - 952px)/2 + 188px);
-	margin-top: calc(60px + 10vh + 20px);
+	margin-left: calc((100vw - 952px)/2 + 328px);
+	margin-top: calc(60px + 10vh + 10px);
 	position: fixed;
+	height: 383px;
+}
+
+#card-7 {
+	margin-left: calc((100vw - 952px)/2 + 188px);
+	margin-top: calc(60px + 10vh + 100px);
+	position: fixed;
+	height: 280px;
+}
+
+#card-8 {
+	margin-left: calc((100vw - 952px)/2 + 28px);
+	margin-top: calc(60px + 10vh + 180px);
+	position: fixed;
+	height: 329px;
+}
+
+#card-9 {
+	margin-left: calc(50vw - 250px);
+	margin-top: calc(50vh - 250px);
+	position: fixed;
+	height: 500px;
 }
 
 #thanks {

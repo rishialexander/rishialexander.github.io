@@ -2,11 +2,19 @@ $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
 
+$( document ).ready(function() {
+   var numCards = $('#cards').children().length;
+	for (var i = 0; i < numCards; i++) {
+		$('#cards').children().eq(i).css('z-index', 100 - i);
+	}
+});
+
 $(window).load(function() {
 
 	var numCards = $('#cards').children().length;
 	var totalOffset = 0;
 	for (var i = 0; i < numCards; i++) {
+		// $('#cards').children().eq(i).css('z-index', 100 - i);
 		var offset = $('#cards').children().eq(i)[0].getBoundingClientRect().top + $('#cards').children().eq(i).outerHeight();
 		totalOffset += offset;
 		$('#cards').children().eq(i).attr('data-offset', totalOffset);
