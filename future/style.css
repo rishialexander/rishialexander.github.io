@@ -16,8 +16,17 @@
 
 @font-face { font-family: "Walsheim"; font-weight: 600; font-style: italic; src: url('assets/Walsheim/GT-Walsheim-Pro-Bold-Oblique.woff'); }
 
-body, html { margin: 0; padding: 0; /*background: #f6f6f6;*/ }
-* { font-family: "Walsheim", "Helvetica"; font-weight: 400;}
+body, html { 
+	margin: 0; 
+	padding: 0; 
+	/*background: #f6f6f6;*/ 
+	max-width: 100%;
+   overflow-x: hidden;
+}
+* { 
+	font-family: "Walsheim", "Helvetica"; 
+	font-weight: 400;
+}
 
 #main {
 /*	max-width: 1200px;*/
@@ -49,12 +58,12 @@ body, html { margin: 0; padding: 0; /*background: #f6f6f6;*/ }
 	margin-top: 60px;
 }
 
-/*.menu-item-selected::after {
+.menu-item-selected::after {
 	content: '•';
 	position: absolute;
 	left: calc(50% - 4px);
-	top: 21px;
-}*/
+	top: 20px;
+}
 
 #the-app {
 	margin-left: -208px;
@@ -75,6 +84,16 @@ body, html { margin: 0; padding: 0; /*background: #f6f6f6;*/ }
 	height: 200px;
 }
 
+#hero-splash {
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+	background: url('assets/hero.jpg') center;
+	background-size: cover;
+	z-index: 998;
+	position: relative;
+}
+
 #app-left {
 	width: 50vw;
 	padding-top: 100px;
@@ -90,12 +109,13 @@ body, html { margin: 0; padding: 0; /*background: #f6f6f6;*/ }
 
 .app-text {
 	max-width: 540px;
+	margin: 50px;
 }
 
 .app-text h1 {
 	font-size: 48px;
 	line-height: 56px;
-	font-weight: 500;
+	font-weight: 600;
 	color: #071548;
 	margin-bottom: 0;
 /*	color: #FF3F4C;*/
@@ -108,6 +128,18 @@ body, html { margin: 0; padding: 0; /*background: #f6f6f6;*/ }
 /*	color: #071548;*/
 }
 
+@media screen and (max-width: 1200px) {
+	.app-text h1 {
+		font-size: 42px;
+		line-height: 49px;
+	}
+
+	.app-text p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
 #app-right {
 	position: fixed;
 	left: 50vw;
@@ -117,27 +149,41 @@ body, html { margin: 0; padding: 0; /*background: #f6f6f6;*/ }
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	position: absolute;
+	top: 100vh;
 }
 
 #phone {
-	width: 742px;
-	height: 768px;
-	background: url('assets/phone20.png');
+	width: 700px;
+	height: 725px;
+	background: url('assets/phone22.png');
 	background-size: cover;
 	position: relative;
-	left: 0px;
+	left: 20px;
 	top: 20px;
 }
 
+#phone-block {
+	width: 264px; 
+	height: 435px;
+	background: #111;
+	position: relative;
+	z-index: 99999;
+	left: 156px;
+	top: 190px;
+	opacity: 0;
+}
+
 #phone-inset {
-	width: 280px;
-	height: 498px;
+	width: 265px;
+	height: 470px;
 	overflow: hidden;
 
 	position: absolute;
 
-	left: 165px;
-	top: 201px;
+	left: 156px;
+	top: 190px;
 }
 
 .inspiration-page {
@@ -156,8 +202,14 @@ body, html { margin: 0; padding: 0; /*background: #f6f6f6;*/ }
 }
 
 #cards {
-	width: 65%;
-	height: 65%;
+	width: 800px;
+	height: 520px;
+
+	width: 100vw;
+	height: 5000px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .inspo-section {
@@ -167,6 +219,18 @@ body, html { margin: 0; padding: 0; /*background: #f6f6f6;*/ }
 	box-sizing: border-box;
 	color: #fff;
 	top: 0;
+	border-radius: 3px;
+}
+
+.inspo-section-img {
+	width: 500px;
+	top: 0;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.inspo-section-img img {
+	max-width: 100%;
 }
 
 .inspo-text h1 {
@@ -185,48 +249,57 @@ body, html { margin: 0; padding: 0; /*background: #f6f6f6;*/ }
 #card-1 {
 	background: #FF4251;
 	z-index: 10;
-	margin-left: 0;
-	margin-top: 0;
+	margin-left: calc((100vw - 952px)/2 + 0px);
+	margin-top: calc(60px + 10vh + 0px);
 	position: relative;
 }
 
 #card-2 {
 	background: #D0D0D0;
-	z-index: 9;
-	margin-left: 300px;
-	margin-top: 300px;
+	z-index: 8;
+	margin-left: calc((100vw - 952px)/2 + 282px);
+	margin-top: calc(60px + 10vh + 184px);
 	position: fixed;
 }
 
 #card-3 {
 	background: #071548;
-	z-index: 8;
-	margin-left: 50px;
-	margin-top: 280px;
+	z-index: 7;
+	margin-left: calc((100vw - 952px)/2 + 74px);
+	margin-top: calc(60px + 10vh + 134px);
 	position: fixed;
 }
 
 #card-4 {
 	background: #9F52E2;
-	z-index: 7;
-	margin-left: 400px;
-	margin-top: 170px;
+	z-index: 6;
+	margin-left: calc((100vw - 952px)/2 + 452px);
+	margin-top: calc(60px + 10vh + 46px);
 	position: fixed;
 }
 
 #card-5 {
 	background: #4295FF;
-	z-index: 6;
-	margin-left: 370px;
-	margin-top: 300px;
+	z-index: 5;
+	margin-left: calc((100vw - 952px)/2 + 388px);
+	margin-top: calc(60px + 10vh + 170px);
 	position: fixed;
 }
 
 #card-6 {
-	background: #ffffff;
-	color: #071548;
-	z-index: 5;
-	margin-left: 180px;
-	margin-top: 200px;
+	z-index: 9;
+	margin-left: calc((100vw - 952px)/2 + 188px);
+	margin-top: calc(60px + 10vh + 20px);
 	position: fixed;
 }
+
+#thanks {
+	width: 500px;
+	padding: 55px 70px;
+	box-sizing: border-box;
+	color: #071548;
+	position: fixed;
+	left: calc(50% - 250px);
+	top: calc(50% - 180px);
+}
+
