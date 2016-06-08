@@ -9,7 +9,7 @@ $( document ).ready(function() {
 
 	$(window).scroll(function(){
 
-		if ($("#hero-splash")[0].getBoundingClientRect().bottom <= 0) {
+		if ($("#hero-splash-video")[0].getBoundingClientRect().bottom <= 0) {
 			$('#app-right').css('position', 'fixed');
 			$('#app-right').css('top', '0');
 		} else {
