@@ -1,5 +1,12 @@
 $( document ).ready(function() {
 
+	$('#arrow').click(function() {
+		$('html, body').animate({
+    		scrollTop: $(window).height()
+		});
+	});
+
+
 	var vid1 = false;
 	var vid2 = false;
 	var vid3 = false;
