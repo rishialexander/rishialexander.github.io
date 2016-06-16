@@ -1,29 +1,84 @@
-body {
-	margin: 0;
-    background: #000;
-
+@font-face {
+    font-family: "Calibre";
+    font-weight: bold;
+    src: url('assets/Calibre-Bold.otf');
 }
 
-/*video#vid { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(teaser.png) no-repeat;
-    background-size: cover; 
+html, body {
+    margin: 0;
+    font-family: serif, "Times New Roman";
+    max-width: 100%;
+    overflow-x: hidden;
 }
-*/
 
-#video {
-    display: block;
-    margin: 0 auto;
-    margin-top: 20vh;
+/* title */
+#name {
+    font-family: "Calibre";
+    font-weight: bold;
+    color: #ffff00;
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 0.3vw;
+    -webkit-text-stroke-color: #ffff00;
+    font-size: 14vw;
+    letter-spacing: 2vw;
+    width: 110vw;
+    margin-left: -2vw;
+    margin-top: 36vh;
+    position: relative;
+    z-index: 999;
 }
+
+#details {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.detail {
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: absolute;
+}
+
+.detail a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 3px solid #000;
+}
+
+#detail-google {
+    top: 16%;
+    left: calc(54% - 140px);
+}
+
+#detail-uw {
+    top: 31%;
+    left: calc(54% - 140px);
+}
+
+#detail-ixd {
+    top: 46%;
+    left: calc(54% - 140px);
+}
+
+#detail-linkedin {
+    top: 61%;
+    left: calc(54% - 140px);
+}
+
+#detail-email {
+    top: 76%;
+    left: calc(54% - 140px);
+}
+
+
+
+
+
+
+
+
+
