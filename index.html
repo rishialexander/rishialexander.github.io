@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Essays on augmented reality at rishialexander</title>
+	<link href='https://fonts.googleapis.com/css?family=Archivo:700|Roboto:400,500,700' rel='stylesheet'>
+	<link rel='stylesheet' type='text/css' href='style.css' />
 </head>
 <body>
 
-Rishi Alexander Agarwal works as a designer at Google. <a href='mailto:rishialexander@gmail.com'>Email</a>
+	<header>
+		<a class='title' href='/'>@rishialexander</a>
+		<div class='header-links'>
+			<a href='https://twitter.com/intent/follow?screen_name=rishialexander' target="_blank"><img class='social-icon' src='twitter.svg'/>Follow on Twitter</a>
+			<a href='#subscribe'>Get the newsletter</a>
+		</div>
+	</header>
 
+	<article>
+		<h1>Making augmented reality apps that people will care about</h1>
+		<p>There has never been a better time to learn how to build augmented reality experiences for smartphones. <a href='https://developer.apple.com/arkit/'>ARKit</a> for iOS and <a href='https://developers.google.com/ar/'>ARCore</a> for Android are now available for anyone to experiment with AR. They&#8217;re both quite accessible for beginners, and they&#8217;re updated frequently. Although smartphone-based AR isn&#8217;t as immersive as a head-mounted display, the real magic is that these new tools work with hardware that's already in millions of people's pockets.</p>
+		<figure>
+			<img src='tony@2x.png' alt='AR interface inside Iron Man&#39;s helmet'/>
+			<figcaption>We&#8217;ll get there one day. Image via I Like Interfaces.</figcaption>
+		</figure>
+		<p>Even though AR is really shiny right now, it&#8217;s still only a tool. It can give you superpowers, but it can just as easily make you frustrated and bored. Here&#8217;s a list of things that will help you make excellent AR experiences.</p>
+		<h2>The power and limitations of AR</h2>
+		<ol>
+			<li>
+				<h3>Visualize the impossible</h3>
+				<p>The best AR experiences let people see something, do something, know something that they couldn&#8217;t before. AR is too costly to be spent on experiences that you can have without AR (don&#8217;t make a weather app). If you&#8217;re looking for inspiration, try <a href='https://experiments.withgoogle.com/ar'>AR Experiments</a> and <a href='http://www.madewitharkit.com/'>Made With ARKit</a>.</p>
+			</li>
+			<li>
+				<h3>Context matters</h3>
+				<p>Consider that people will use your app in a wide variety of settings. AR experiences require good lighting, enough space to place virtual objects, and they don&#8217;t work on moving surfaces (like in a vehicle).</p>
+			</li>
+			<li>
+				<h3>Short sessions are best</h3>
+				<p>After a long AR session, your phone will be very hot, have no battery, and your arm will ache. Nobody wants that. Keep the duration of the experience to under a minute to maximize &ldquo;wow&rdquo; and minimize &ldquo;ow&rdquo;.</p>
+			</li>
+			<li>
+				<h3>No UX best practices yet</h3>
+				<p>Since you&#8217;re on the cutting edge, there aren&#8217;t many established patterns for basic interactions in AR. As you developing your app, try it out early and often. Many interactions that are intuitive on flat 2D interfaces don&#8217;t make sense at all in 3D space.</p>
+			</li>
+		</ol>
+
+		<h2>AR is amazing (sometimes)</h2>
+		<p>There&#8217;s a lot of crazy and amazing things you can do with AR. However, when someone tries your AR app, they&#8217;re giving you a lot of their time, effort, and battery life. You can definitely make it worth their while, but be prepared to experiment a lot to figure out what works.</p>
+	</article>
+	<footer id='subscribe'>
+		<h2>Get updates</h2>
+		<p>Subscribe to get more articles about augmented reality.</p>
+		<form method="POST" action="http://formspree.io/rishialexander@gmail.com" target="_blank">
+  			<input type="email" name="email" placeholder="Your email">
+ 			<button type="submit">Get updates</button>
+		</form>
+	</footer>
 </body>
 </html>
